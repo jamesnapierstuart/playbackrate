@@ -10,9 +10,9 @@ function preload() {
 function setup() {
   createCanvas( displayWidth, displayHeight )
   background(0)
-  window.addEventListener('touch', function() {
+  window.addEventListener('click', function() {
     song.play()
-  }, false)
+  }, true)
 }
 
 function draw() {

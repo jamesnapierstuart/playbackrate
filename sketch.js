@@ -3,27 +3,27 @@ var d = new Date();
 
 function preload() {
   // Load a sound file
-  song = loadSound('snare.wav');
+  song = loadSound('b.m4a');
 }
 
 function setup() {
   createCanvas( displayWidth, displayHeight )
   
   background(255);
-  // song.loop()
+  song.play()
 
 
 }
 
 function draw() {
 
-var speed = map(mouseY, 0.1, height, -20, 20)
-var size = 12000/speed
+// var speed = map(mouseY, 0.1, height, -20, 20)
+// var size = 12000/speed
 
 
   // speed = constrain(speed, 0.01, 4);
-  song.rate(speed)
-  song.play()
+  // song.rate(speed)
+  // song.play()
 
 
   // Inverse variation

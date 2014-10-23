@@ -8,7 +8,11 @@ function preload() {
 function setup() {
   createCanvas( displayWidth, displayHeight )
   background(0)
-  song.play()
+  if (song.isLoaded()) {
+    env.triggerAttack(song);
+    touchStarted = true;
+  }
+  // song.play()
 }
 
 function draw() {

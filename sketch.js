@@ -15,3 +15,19 @@ function draw() {
   ellipse(width/2, height/2, 20, 20)
   ellipse(width/2+20, height/2+20, 20, 20)
 }
+
+function doOnOrientationChange()
+  {
+    switch(window.orientation) 
+    {  
+      case -90:
+      case 90:
+        alert('landscape');
+        break; 
+      default:
+        alert('portrait');
+        break; 
+    }
+  }
+
+  window.addEventListener('orientationchange', doOnOrientationChange);

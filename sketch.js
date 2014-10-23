@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas( displayWidth, displayHeight )
+  createCanvas(window.innerWidth, window.innerHeight)
   background(0)
   song.play()
 }

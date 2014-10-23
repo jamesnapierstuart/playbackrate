@@ -23,10 +23,8 @@ function doOnOrientationChange()
     {  
       case -90:
       case 90:
-        alert('landscape');
         break; 
       default:
-        alert('portrait');
         break; 
     }
   }

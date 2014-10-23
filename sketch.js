@@ -3,14 +3,16 @@ var song
 function preload() {
   // Load a sound file
   song = loadSound('b.m4a')
-  env.triggerAttack(song)
-  touchStarted = true
+  // env.triggerAttack(song)
+  // touchStarted = true
 }
 
 function setup() {
   createCanvas( displayWidth, displayHeight )
   background(0)
-  song.play()
+  window.addEventListener('click', function() {
+    song.play()
+  }, false)
 }
 
 function draw() {

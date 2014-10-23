@@ -1,18 +1,14 @@
-var song;
-var d = new Date();
+var song
 
 function preload() {
   // Load a sound file
-  song = loadSound('b.m4a');
+  song = loadSound('snare.wav');
 }
 
 function setup() {
   createCanvas( displayWidth, displayHeight )
-  
   background(255);
   song.play()
-
-
 }
 
 function draw() {

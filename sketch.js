@@ -3,6 +3,7 @@ var song
 function preload() {
   // Load a sound file
   song = loadSound('b.m4a')
+  env.triggerAttack(song)
   touchStarted = true
 }
 
